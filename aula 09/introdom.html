@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao DOM</title>
+    <style>
+            body{
+                background: rgb(165, 100, 226);
+                color: white;
+                font: normal 18pt Arial;
+            }
+
+
+    </style>
+</head>
+<body>
+        <h1>Iniciando estudos com o DOM</h1>
+        <p>Aqui vai o resultado</p>
+        <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+        <div id="msg">Clique em mim</div>
+
+        <script>
+
+            var p1 = document.getElementsByTagName('p')[0]; // esse selecionador pega mais de um elemento, então para dizer qual dos 'p' vc está se referindo basta adicionar colchetes e o número da ordem daquele elemento, tipo 0 é o primeiro elemento e assim por diante.
+
+            var corpo = document.body; //colocando o corpo da página dentro de uma variável
+
+            p1.style.color = 'yellow'; // se refere ao objeto, a caracteristica e afina o resultado.
+
+            corpo.style.background = 'purple' // só funciona se 'corpo' for uma variável, aqui altera a cor predefinida
+
+            document.write(`está escrito assim: ${p1.innerHTML}`); // innerText é o texto que está dentro do primeiro parágrafo, mas não traz a formatação
+
+            /*
+            var d = document.getElementById('msg');
+            d.style.background = 'yellow'
+            d.style.color = 'black'
+            d.innerText = 'Estou aguardando...' // altera o texto original da div
+            */
+
+            var d = document.querySelector('div#msg')
+        </script>
+
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title name = "título">Testando Selecionadores</title>
+    <style>
+        body {
+            background-color: rgb(112, 167, 214);
+            color: yellow;
+        }
+        h1 {
+            font-style: oblique;
+            font-size: 80px;
+        }
+        p {
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="linha">Olá, mundo!</h1>
+    <p id="p1"> testando o <strong>DOM</strong></p>
+    <div id = "clique">Clique aqui</div>
+
+    <script>
+        
+        var para = document.getElementById('p1')
+        var clicando = document.getElementById('clique')
+        clicando.style.background = 'green'
+        para.style.color = 'white'
+        para.innerText = 'oi'
+
+        var d = document.querySelector('div#clique')
+        d.style.color = 'black'
+
+        
+
+    </script>
+</body>
+</html>
