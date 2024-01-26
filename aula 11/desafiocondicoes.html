@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste nacionalidade</title>
+</head>
+<body>
+    <h1>NACIONALIDADE</h1>
+    Onde você nasceu? <input type="" name="lugar" id="lugar">
+
+    <input type="button" value="verificar" id="verificar" onclick="analisar()">
+    <div id="res"> resultado </div>
+    
+    <script>
+        function analisar(){
+
+        var local = String(lugar.value)
+        var res = document.querySelector('div#res')
+        
+        res.innerHTML = `Você nasceu no país ${lugar},`
+
+        if(lugar == 'Brasil'){
+            res.innerHTML += `<p> então você é brasileiro</p>`
+        } else {
+            res.innerHTML += `<p> então você é estrangeiro</p>`
+        }
+        
+
+        }
+
+
+    </script>
+
+
+
+</body>
+</html>

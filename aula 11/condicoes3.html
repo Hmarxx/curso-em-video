@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+    <style>
+        body{
+            background-color: aquamarine;
+            font: normal 18px Arial;
+        }
+        input{
+            font-size: 15px;
+        }
+        div#res {
+            background: coral;
+            color: rgb(100, 44, 12);
+            width: 200px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Sistema de multas</h1>
+    Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> Km/h
+    <input type="button" value="Verificar" id="verificar" onclick="clicar()">
+    <p></p>
+    <div id="res"> Resultado </div>
+
+    <script>
+
+        function clicar(){
+            var vel = Number(txtvel.value);
+            var botao = document.getElementById('verificar')
+            var resultado = document.getElementById('res')
+
+                if(vel > 60) {
+                    resultado.innerHTML = 'MULTADO!'
+                    resultado.style.background = 'red'
+                    resultado.style.color = 'white'
+
+                } else {
+                    resultado.innerHTML = 'TUDO CERTO!'
+                    resultado.style.background = 'green'
+                    resultado.style.color = 'white'
+
+                }
+        }
+        
+        
+
+    </script>
+
+</body>
+</html>
