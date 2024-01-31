@@ -1,0 +1,26 @@
+body {
+    background: #836ade79;
+    text-align: center;
+    font: normal 12pt Arial;
+}
+h1{
+    color: antiquewhite;
+}
+
+div#msg {
+    color: aliceblue;
+    border-radius: 5px;
+    background-color: #A96ADE;
+}
+
+div#img {
+    background-color: white;
+    height: 250px;
+    width: 270px;
+    text-align: center;
+    margin: auto;
+}
+
+footer{
+    color: white;
+}
