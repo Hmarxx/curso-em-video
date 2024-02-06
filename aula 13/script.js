@@ -10,15 +10,15 @@ function verificar(){
         var fsex = document.getElementsByName('radsex')
         var idade = ano - Number(fano.value)
         var genero = ''
-        var img = document.createElement('img')
-        img.setAttribute('id', 'foto')
+        var img = document.createElement('img')   //aqui cria uma imagem, mesmo que não esteja no html
+        img.setAttribute('id', 'foto')            //aqui colocamos atributos, no caso colocamos o id e o chamamos de foto
 
-        if(fsex[0].checked){
-            genero = 'Homem'
+        if(fsex[0].checked){                      //aqui analisamos qual foi a opção marcada, se a primeira ou a segunda
+            genero = 'Homem'                      //para a primeira, colchete com o zero, o restante segue na ordem dos números
             if(idade >=0 && idade <11){
                 //criança
-                img.setAttribute('src', 'menino.jpg')
-
+                img.setAttribute('src', 'menino.jpg')   //aqui alteramos a imagem criada e colocamos url da nova imagem
+                                                        // usando o 'src' para se referir ao endereço e depois colocamos o endereço
             } else if (idade <21) {
                 //adolescente
                 img.setAttribute('src', 'adolescente homem.jpg')
