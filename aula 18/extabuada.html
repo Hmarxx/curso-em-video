@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <link rel="stylesheet" href="tabu.css">
+</head>
+<body>
+    <header>
+        <h1>Tabuada</h1>
+    </header>
+
+    <section>
+        <label for="numero">Número: </label>
+        <input type="number" name="numero" id="numero">
+        <button type="submit" onclick="multiplica()">Gerar tabuada</button> <br><br>
+        <div>
+        <select name="produto" id="produto">
+            <option value="" disabled selected hidden id="tabuada"> Veja a tabuada</option>
+        </select>
+        </div>
+        <div id="imagem"></div>
+    </section>
+    
+
+
+
+    <script src="tab.js"></script>
+</body>
+</html>
