@@ -1,0 +1,31 @@
+body{
+    background: rgb(132, 132, 243);
+    
+}
+
+h1{
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    
+    
+}
+
+section{
+    margin: auto;
+    background: white;
+    width: 400px;
+    height: 300px;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+div{
+    padding: 5px;
+    
+}
+footer{
+    text-align: center;
+    color: antiquewhite;
+    font: bolder;
+}
